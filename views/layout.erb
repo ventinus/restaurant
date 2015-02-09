@@ -3,21 +3,24 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Restaurant</title>
-	<link rel="stylesheet" href="stylesheets/style.css">
+	<link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 <body>
 	<header>
-      <h1>A Monkey's Meal</h1>
-      <nav>
-        <ul>
-          <li><a href="/foods">Menu</a></li>
-          <li><a href="/parties">Parteis</a></li>
-          <li><a href="/orders">Orders</a></li>
-          <li><a href="/closed">Closed Re-seats</a></li>
-        </ul>
-      </nav>
-    </header>
-	<%= yield %>
+    <h1>A Monkey's Meal</h1>
+    <nav>
+      <ul>
+        <li><a href="/foods">Menu</a></li>
+        <li><a href="/parties">Parteis</a></li>
+        <li><a href="/orders">Orders</a></li>
+        <li><a href="/closed">Closed Re-seats</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="background">
+    
+  <%= yield %>
+  </div>
   <footer>Maid and pade for by the monkeys of ny</footer>
 </body>
 </html>

@@ -36,7 +36,17 @@ header {
 }
 
 body {
-	background-image: url("http://higherperspective.com/wp-content/uploads/2014/11/525916-07167048-7f61-11e3-8cdb-58f79d3137a3.jpg");
+	.background {
+		background-color: lightgrey;
+		background-image: url("http://higherperspective.com/wp-content/uploads/2014/11/525916-07167048-7f61-11e3-8cdb-58f79d3137a3.jpg");
+		background-size: 80%;
+		background-repeat: no-repeat;
+		background-position: center;
+	} 
+	h2 {
+		font-size: 1.5em;
+		opacity: 1px bold;
+	}
 }
 
 footer {
