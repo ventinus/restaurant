@@ -14,32 +14,13 @@ end
 enable :sessions
 set :app_password, "fresh"
 
-get '/' do
-  @password = session[:password]
-  @id = session[:id]
-  @employees = Employee.all
 
-  if @id && @password == settings.app_password
-    redirect to("/employees/#{@id}")
-  else
-    erb :'employees/login'
-  end  
-end
-
-post '/login' do
-  session[:password] = params[:password]
-  session[:id] = params[:id]
-  redirect to('/')
-end
-
-get '/logout' do
-  session[:password] = nil
-  session[:id] = nil
-  redirect to '/'
-end
 
 get '/' do
-	erb :'index'
+	@name = session[:username] || "Not logged in"
+	
+	erb :'home'
+
 end
 
 ############food

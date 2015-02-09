@@ -1,0 +1,33 @@
+* {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  font: inherit; }
+
+header {
+  background-color: red;
+  border-bottom: green 10px solid; }
+  header h1 {
+    text-align: center;
+    font-size: 5em; }
+  header nav {
+    text-align: center;
+    background-color: blue; }
+    header nav ul {
+      font-size: 3em; }
+      header nav ul li {
+        display: inline; }
+        header nav ul li a {
+          color: orange;
+          text-decoration: none; }
+        header nav ul li + li {
+          padding-left: 30px; }
+
+body {
+  background-image: url("http://higherperspective.com/wp-content/uploads/2014/11/525916-07167048-7f61-11e3-8cdb-58f79d3137a3.jpg"); }
+
+footer {
+  font-size: 10em;
+  background-color: orange; }
+
+/*# sourceMappingURL=style.css.map */
