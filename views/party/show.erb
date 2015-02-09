@@ -1,0 +1,23 @@
+<h2>Your party info headquaqrters!</h2>
+<a href="/parties/<%= @party.id %>/edit">Edit dat party</a>
+<ul>
+	<li>Table #: <%= @party.table_number %></li>
+	<li>Party size: <%= @party.guests %></li>
+	<h3>Orders:</h3>
+	<% if @party.orders %>
+		<% @party.orders.all.map do |order| %>
+		<li><%= order.food.name %></li>
+		<% end %>
+	<% else %>
+		<p>No orders yet!<a href="/orders/new">Add a flippin' Order</a></p>
+
+	<% end %>
+</ul>
+
+<form action="/parties/<%= @party.id %>/checkout" method="POST">
+  <input type="hidden" name="_method" value="PATCH">
+  <input type="hidden" name ="party[paid]" value="1">
+  <input type="submit" value="Checkout">
+</form>
+
+<!-- link to new order page goes to a new page with id specific -->

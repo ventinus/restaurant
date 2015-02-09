@@ -1,0 +1,27 @@
+<h1>Check Closed !</h1>
+
+<h3>Party ID:</h3>
+<p><%= @receipt.party_id %></p>
+<table>
+	<tr>
+		<th>Food Ordered</th>
+		<th>Price</th>
+	</tr>
+		<% @receipt.foods.map do |food| %>
+	<tr>
+		<td><%= food.name %></td>
+		<td>$<%= food.price %></td>
+	</tr>
+		<% end %>
+</table>
+
+<h3>Sub-total:</h3>
+<p>$<%= @receipt.sub_total %></p>
+
+<h3>Gratuity:</h3>
+<p>$<%= @receipt.gratuity %></p>
+
+<h2>Total:</h2>
+<h3>$<%= @receipt.total %></h3>
+
+<a href="/closed">All closed receipts...</a>

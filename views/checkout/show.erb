@@ -1,0 +1,32 @@
+<h1>Checkout stage !</h1>
+
+<h3>Party ID:</h3>
+<p><%= @receipt.party_id %></p>
+<table>
+	<tr>
+		<th>Food Ordered</th>
+		<th>Price</th>
+	</tr>
+		<% @receipt.foods.map do |food| %>
+	<tr>
+		<td><%= food.name %></td>
+		<td>$<%= food.price %></td>
+	</tr>
+		<% end %>
+</table>
+
+<h3>Sub-total:</h3>
+<p>$<%= @receipt.sub_total %></p>
+
+<h3>Suggested tip amounts:</h3>
+<form action="/closed/<%= @party.id %>" method="POST">
+
+<label for="gratuity">Suggested tip amounts:</label>
+<select name="receipt[gratuity]">
+	<option id="gratuity" type="integer" value="<%= @receipt.sub_total.to_f/6 %>">15%: $<%= @receipt.sub_total.to_f/6 %></option>
+	<option id="gratuity" type="integer" value="<%= @receipt.sub_total.to_f/5 %>">20%: $<%= @receipt.sub_total.to_f/5 %></option>
+	<option id="gratuity" type="integer" value="<%= @receipt.sub_total.to_f/4 %>">25%: $<%= @receipt.sub_total.to_f/4 %></option>
+</select>
+
+<input type="hidden" name="_method" value="PATCH">
+<input type="submit" value="Close Check">

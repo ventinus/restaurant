@@ -1,0 +1,16 @@
+<h1>All Closed Receipts</h1>
+
+<table>
+	<tr>
+		<th>Receipt Number</th>
+		<th>Total</th>
+		<th>Time Closed</th>
+	</tr>
+	<% @receipts.map do |receipt| %>
+	<tr>
+		<td><a href="/closed/<%= receipt.party_id %>"><%= receipt.party_id %></a></td>
+		<td><%= receipt.total %></td>
+		<td><%= receipt.updated_at %></td>
+	</tr>
+	<% end %>
+</table>

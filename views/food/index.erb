@@ -1,0 +1,17 @@
+<h2>Foods</h2>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Category</th>
+    <th>Price</th>
+  </tr>
+  <% @foods.each do |food| %>
+    <tr>
+      <td><a href="/foods/<%= food.id %>/edit"> <%= food.name %></a></td>
+      <td><%= food.category %></td>
+      <td>$<%= food.price %></td>
+    </tr>
+  <% end %>
+</table><br>
+<a href="/foods/new">Add a Food</a>

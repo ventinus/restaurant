@@ -1,0 +1,22 @@
+<h2>Orders</h2>
+
+<table>
+	<tr>
+		<th>Food Name</th>
+		<th>Table Number</th>
+		<th> </th>
+	</tr><br>
+	<% @orders.map do |order| %>
+	<tr>
+		<td><a href="/orders/<%= order.id %>/edit"><%= order.food.name %></a></td>
+		<td><%= order.party.table_number %></td>
+		<td><form action="/orders/<%= order.id %>" method="POST">
+		<input type="hidden" name="_method" value="DELETE">
+  		<input type="submit" value="Remove Order">
+		</form></td>
+	</tr>
+	<% end %>
+</table><br>
+
+  
+<!-- find out how to select only orders where paid is false for one table and true for the second -->
