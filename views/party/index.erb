@@ -1,11 +1,12 @@
 <h2>Parties</h2>
 <a href="/parties/new">Add a PartY</a><br>
+<div class="unpaid">
 <ul>
 	<% @parties.where(paid: 'f').each do |party| %>
 		<li><a href="/parties/<%= party.id %>">Table #: <%= party.table_number %></a> Party size: <%= party.guests %></li>
 	<% end %>
 </ul>
-
+</div>
 <h3>Previous Parties</h3>
 <ul>
 	<% @parties.where(paid: 't').each do |party| %>

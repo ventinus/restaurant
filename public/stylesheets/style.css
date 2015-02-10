@@ -4,6 +4,20 @@
   margin: 0;
   font: inherit; }
 
+a {
+  color: orange;
+  text-decoration: none;
+  font-size: 1.1em;
+  color: white;
+  padding: 0 20px;
+  border: 2px solid grey;
+  margin: 10px 0;
+  background-color: #888; }
+
+a:hover {
+  background-color: brown;
+  color: white; }
+
 header {
   background-color: red;
   border-bottom: green 10px solid; }
@@ -17,9 +31,6 @@ header {
       font-size: 3em; }
       header nav ul li {
         display: inline; }
-        header nav ul li a {
-          color: orange;
-          text-decoration: none; }
         header nav ul li + li {
           padding-left: 30px; }
 
@@ -29,12 +40,41 @@ body .background {
   background-size: 80%;
   background-repeat: no-repeat;
   background-position: center; }
+body h1 {
+  text-align: center;
+  font-size: 2em; }
 body h2 {
-  font-size: 1.5em;
-  opacity: 1px bold; }
+  font-size: 3em;
+  text-align: center; }
+body h3 {
+  font-size: 2em;
+  text-indent: 180px;
+  color: pink;
+  background-color: black;
+  display: inline; }
+body li {
+  color: hotpink;
+  text-indent: 200px;
+  display: inline-block;
+  background-color: lightblue; }
+body .unpaid {
+  text-align: center;
+  font-size: 1.4em;
+  color: darkblue;
+  display: inline-block;
+  background-color: lightblue; }
+body table th {
+  font-size: 1.3em;
+  /*font-weight: ;*/
+  background-color: lightgreen;
+  border-bottom: 2px solid black; }
+body table td {
+  text-align: center;
+  border-right: 1px solid black; }
 
 footer {
   font-size: 10em;
-  background-color: orange; }
+  background-color: orange;
+  text-align: center; }
 
 /*# sourceMappingURL=style.css.map */

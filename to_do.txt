@@ -125,3 +125,6 @@ gratuity
 total
 
 finish show on employees erb
+
+
+change paid to true when tip gets added
