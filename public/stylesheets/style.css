@@ -26,6 +26,7 @@ a:hover {
 
 body {
   font-family: Tahoma, Geneva, sans-serif;
+  background-color: darkgrey; 
 }
 body .background {
   background-color: lightgrey;
@@ -83,7 +84,7 @@ header {
           }
 
 footer {
-  font-size: 10em;
+  font-size: 4em;
   background-color: orange;
   text-align: center; }
 
