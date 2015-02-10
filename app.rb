@@ -11,6 +11,9 @@ Dir["models/concerns/*.rb"].each do |file|
 	require_relative file
 end
 
+get '/' do
+	erb :'home'
+end
 ############food
 
 get '/foods' do

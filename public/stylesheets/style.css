@@ -33,9 +33,11 @@ body {
  }*/
 body h1 {
   text-align: center;
-  font-size: 2em; }
+  font-size: 2em; 
+  color: white;}
 body h2 {
   font-size: 3em;
+  color: white;
   text-align: center; }
 body h3 {
   font-size: 2em;
