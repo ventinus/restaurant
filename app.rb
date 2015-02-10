@@ -150,7 +150,7 @@ end
 
 get '/print_closed/:id' do |id|
 	@receipt = Receipt.find_by_party_id(id)
-	erb :'checkout/bare_receipt'
+	erb :'checkout/bare_receipt', layout: :print
 end
 
 ############
