@@ -62,6 +62,9 @@ body table th {
   border-bottom: 2px solid black; }
 body table td {
   text-align: center;
+  color: black;
+  font-weight: bold;
+
   border-right: 1px solid black; }
 
 header {
