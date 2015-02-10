@@ -1,2 +1,8 @@
 <h1><%= @employee.name %></h1>
 <a href="/employees/<%= @employee.id %>/edit">Edit <%= @employee.name %></a>
+<h2>Employee: <%= @employee.name %></a> </h2>
+<h2>Employee ID: <%= @employee.id %></h2>
+
+<% today_parties = @parties.select do |party| %>
+	<% party.created_at > Date.yesterday %>
+<% end %>

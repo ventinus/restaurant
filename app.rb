@@ -11,16 +11,6 @@ Dir["models/concerns/*.rb"].each do |file|
 	require_relative file
 end
 
-enable :sessions
-set :app_password, "fresh"
-
-get '/' do
-	@name = session[:username] || "Not logged in"
-	
-	erb :'home'
-
-end
-
 ############food
 
 get '/foods' do
@@ -163,4 +153,10 @@ end
 ############
 get '/console' do
 	Pry.start(binding)
+end
+
+get '/*' do
+	<<-HTML
+	<img src="http://33.media.tumblr.com/0d96fafaee76198607b6185241cea02d/tumblr_mldfv2jD5G1rvnnvyo6_250.gif#.png">
+	HTML
 end
