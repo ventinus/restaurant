@@ -1,5 +1,5 @@
 <h2>Edit Food Properties</h2>
-<form action="/foods/<%= @food.id %>" method="POST">
+<form action="/foods/<%= @food.id %>" id="edit" method="POST">
 
   <label for="food_name">Name</label> 
   <input id="food_name" type="text" name="food[name]" value="<%= @food.name %>"><br>
@@ -20,7 +20,7 @@
   <input type="submit" value="Say it forward!">
 </form>
 
-<form action="/foods/<%= @food.id %>" method="POST">
+<form action="/foods/<%= @food.id %>" id="food_delete" method="POST">
   <input type="hidden" name="_method" value="DELETE">
   <input type="submit" value="Remove Food">
 </form>

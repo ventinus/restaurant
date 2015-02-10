@@ -8,6 +8,13 @@ $primary: blue;
 $secondary: green;
 $third_color: orange;
 
+.print {
+	border: 0;
+	padding: 0;
+	margin: 0;
+	font: sans-serif;
+}
+
 a {
 	color: $third_color;
 	text-decoration: none;
@@ -41,7 +48,6 @@ header {
 				+ li {
 					padding-left: 30px;
 				}
-
 			}
 		}
 	}
@@ -74,20 +80,15 @@ body {
 	li {
 		color: hotpink;
 		text-indent: 200px; 
-		display: inline-block;
-		background-color: lightblue;
 	}
 	.unpaid {
 		text-align: center;
 		font-size: 1.4em;
 		color: darkblue;
-		display: inline-block;
-		background-color: lightblue;
 	}
 	table {
 		th {
 			font-size: 1.3em;
-			/*font-weight: ;*/
 			background-color: lightgreen;
 			border-bottom: 2px solid black;
 			}
@@ -95,9 +96,7 @@ body {
 			text-align: center;	
 			border-right: 1px solid black;
 			}
-		
 		}
-	
 }
 
 footer {

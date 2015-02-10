@@ -1,8 +1,5 @@
 <h2>Create dat feud</h2>
-
-<form action="/foods" method="POST">
-
- 
+<form action="/foods" id="new_food" method="POST">
 
   <label for="food_name">Name</label> 
   <input id="food_name" type="text" name="food[name]"><br>
@@ -14,11 +11,10 @@
     <option value="Asian">Asian</option>
     <option value="Italian">Italian</option>
     <option value="African">African</option>
-  </select>
+  </select><br>
 
   <label for="food_price">Price</label> 
   <input id="food_price" type="text" name="food[price]"><br>
-
 
   <input type="submit" value="Add it!">
 </form>

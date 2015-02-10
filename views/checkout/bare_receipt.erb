@@ -1,0 +1,22 @@
+<div class="print">
+	<h1>Check Clothesed !</h1>
+
+	<h3>Party ID:</h3>
+	<p><%= @receipt.party_id %></p>
+
+	<h3>Food Ordered</h3>
+	<h3>Price</h3>
+		<% @receipt.foods.map do |food| %>
+			<p><%= food.name %></p>
+			<p>&pound;<%= food.price %></p>
+		<% end %>
+
+	<h3>Sub-total:</h3>
+	<p>&pound;<%= @receipt.sub_total %></p>
+
+	<h3>Gratuity:</h3>
+	<p>&pound;<%= @receipt.gratuity %></p>
+
+	<h2>Total:</h2>
+	<h3>&pound;<%= @receipt.total %></h3>
+</div>

@@ -128,3 +128,92 @@ finish show on employees erb
 
 
 change paid to true when tip gets added
+
+ella css:
+* {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  font: inherit; 
+}
+
+.print {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  font: sans-serif; 
+}
+
+a {
+  color: 8a8a8a;
+  text-decoration: none;
+  font-size: .75em;
+  color: white;
+  padding: 0 10px;
+  border: 2px solid grey;
+  margin: 5px 0;
+  background-color: #888; }
+
+a:hover {
+  background-color: #ffffff;
+  color: white; }
+
+header {
+  background-color: #727272;
+  border-bottom: green 10px solid;
+  font-size: 19em bold; }
+  header h1 {
+    text-align: center;
+    font-size: 19em bold; }
+  header nav {
+    text-align: center;
+    background-color: #626262; }
+    header nav ul {
+      font-size: 2em; }
+      header nav ul li {
+        display: inline; }
+        header nav ul li + li {
+          font-size: 10;
+          padding-left: 15px; }
+
+body .background {
+  background-color: #8a8a8a;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center; }
+body h1 {
+  text-align: center;
+  font-size: 2em; }
+body h2 {
+  font-size: 3em;
+  text-align: center; }
+body h3 {
+  font-size: 2em;
+  text-indent: 180px;
+  color: pink;
+  background-color: black;
+  display: inline; }
+body li {
+  color: hotpink;
+  text-indent: 200px; }
+body .unpaid {
+  text-align: center;
+  font-size: 1.4em;
+  color: darkblue; }
+body table th {
+  font-size: 1.3em;
+  background-color: lightgreen;
+  border-bottom: 2px solid black; }
+body table td {
+  font-size: 1.3em;
+  text-align: center;
+  border-right: 1px solid black; }
+
+footer {
+  font-size: .75em;
+  background-color: 888;
+  text-align: center;
+  padding-top: 50px;
+  color: #ccc; }
+
+/*# sourceMappingURL=style.css.map */

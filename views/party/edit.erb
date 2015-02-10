@@ -1,15 +1,6 @@
 <h2>Edit Party Details</h2>
 <h3>Table number: <%= @party.table_number %></h3>
 <form action="/parties/<%= @party.id %>" method="POST">
-<!-- form allows for table number change but doesnt allow for choosing the same table
-
-	<label for="table_number">Table Number</label>
-  <select name="party[table_number]">
-  	<% @available.each do |avail| %>
-  	<option id="table_number" type="number" value="<%= avail %>"><%= avail %> </option>
-  	<% end %>
-  	</select>
-  <br> -->
 
   <label for="party_size">Party Size</label> 
   <input id="party_size" type="text" name="party[guests]" value="<%= @party.guests %>"><br>

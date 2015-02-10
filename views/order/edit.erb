@@ -2,22 +2,13 @@
 <h3>Party number: <%= @order.party_id %></h3>
 <form action="/orders/<%= @order.id %>" method="POST">
 
-
-
 <label for="food_name">Food</label>
 <select name="order[food_id]">
 	<% @foods.each do |food| %>
 	<option id="food_name"  type="text" value="<%= food.id %>"><%= food.name %></option>
 	<% end %>
 </select>
-<!-- needs work -->
-
-
-  
 
   <input type="hidden" name="_method" value="PATCH">
   <input type="submit" value="Complete Edit">
 </form>
-
-
-<!-- look at the code from matt about editing animals -->

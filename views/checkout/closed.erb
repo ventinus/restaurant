@@ -2,26 +2,28 @@
 
 <h3>Party ID:</h3>
 <p><%= @receipt.party_id %></p>
-<table>
+<table style="margin: 0 auto">
 	<tr>
-		<th>Food Ordered</th>
-		<th>Price</th>
+		<th width="45%">Food Ordered</th>
+		<th width="45%">Price</th>
 	</tr>
 		<% @receipt.foods.map do |food| %>
 	<tr>
 		<td><%= food.name %></td>
-		<td>$<%= food.price %></td>
+		<td>&pound;<%= food.price %></td>
 	</tr>
 		<% end %>
 </table>
 
 <h3>Sub-total:</h3>
-<p>$<%= @receipt.sub_total %></p>
+<p>&pound;<%= @receipt.sub_total %></p>
 
 <h3>Gratuity:</h3>
-<p>$<%= @receipt.gratuity %></p>
+<p>&pound;<%= @receipt.gratuity %></p>
 
 <h2>Total:</h2>
-<h3>$<%= @receipt.total %></h3>
+<h2>&pound;<%= @receipt.total %></h2>
+
+<a href="/print_closed/<%= @receipt.party_id %>" target="_blank">Printable receipt</a>
 
 <a href="/closed">All clothsed receipts...</a>

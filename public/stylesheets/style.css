@@ -4,6 +4,12 @@
   margin: 0;
   font: inherit; }
 
+.print {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  font: sans-serif; }
+
 a {
   color: orange;
   text-decoration: none;
@@ -34,6 +40,9 @@ header {
         header nav ul li + li {
           padding-left: 30px; }
 
+body {
+  font-family: Tahoma, Geneva, sans-serif;
+}
 body .background {
   background-color: lightgrey;
   background-image: url("http://higherperspective.com/wp-content/uploads/2014/11/525916-07167048-7f61-11e3-8cdb-58f79d3137a3.jpg");
@@ -54,18 +63,13 @@ body h3 {
   display: inline; }
 body li {
   color: hotpink;
-  text-indent: 200px;
-  display: inline-block;
-  background-color: lightblue; }
+  text-indent: 200px; }
 body .unpaid {
   text-align: center;
   font-size: 1.4em;
-  color: darkblue;
-  display: inline-block;
-  background-color: lightblue; }
+  color: darkblue; }
 body table th {
   font-size: 1.3em;
-  /*font-weight: ;*/
   background-color: lightgreen;
   border-bottom: 2px solid black; }
 body table td {
@@ -77,4 +81,51 @@ footer {
   background-color: orange;
   text-align: center; }
 
-/*# sourceMappingURL=style.css.map */
+
+
+form {
+  margin-left: 30%;
+  position: relative;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 24px;
+  font-weight: bold;
+  color: #09C;  
+  border: 1px solid #999;
+  border-radius: 10px;
+  display: inline-block;
+}
+ #new_food {
+  padding: 5px;
+ }
+#edit {
+  margin-bottom: 20px;
+  padding: 0 0 55px 10px;
+  width:200px;
+  height:100px;
+}
+#new_party {
+  padding: 7px;
+}
+#add {
+  margin-left: 20%;
+}
+
+input[type=submit] {
+  border: 1px dotted #999;
+  border-radius: 10px;
+}
+
+input[type=submit]:hover {
+  background-color: brown;
+}
+
+#food_delete {
+  margin: auto;
+}
+#checkout {
+  margin-left: 10%;
+}
+ #tip_selection {
+  margin: auto;
+ }
