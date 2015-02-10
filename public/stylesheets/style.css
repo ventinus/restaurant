@@ -47,12 +47,14 @@ body h3 {
   background-color: black;
   display: inline; }
 body li {
-  color: hotpink;
+  color: black;
+  font-weight: bold;
   text-indent: 200px; }
 body .unpaid {
   text-align: center;
   font-size: 1.4em;
-  color: darkblue; }
+  color: darkblue; 
+}
 body table th {
   font-size: 1.3em;
   background-color: lightgreen;
