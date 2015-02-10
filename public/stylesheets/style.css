@@ -26,14 +26,11 @@ a:hover {
 
 body {
   font-family: Tahoma, Geneva, sans-serif;
-  background-color: darkgrey; 
+  background: url("https://files.slack.com/files-pri/T0351JZQ0-F03KZ128S/bananabackground.jpg") no-repeat fixed 100% 100%;
 }
-body .background {
+/*body .background {
   background-color: lightgrey;
-  background-image: url("http://higherperspective.com/wp-content/uploads/2014/11/525916-07167048-7f61-11e3-8cdb-58f79d3137a3.jpg");
-  background-size: 80%;
-  background-repeat: no-repeat;
-  background-position: center; }
+ }*/
 body h1 {
   text-align: center;
   font-size: 2em; }
@@ -62,7 +59,7 @@ body table th {
   border-bottom: 2px solid black; }
 body table td {
   text-align: center;
-  color: black;
+  color: white;
   font-weight: bold;
 
   border-right: 1px solid black; }
@@ -95,6 +92,7 @@ p {
 footer {
   font-size: 4em;
   background-color: orange;
+  margin-top: 300px;
   text-align: center; }
 
 
