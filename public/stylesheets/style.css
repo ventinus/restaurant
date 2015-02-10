@@ -47,9 +47,10 @@ body h3 {
   background-color: black;
   display: inline; }
 body li {
-  color: black;
+  color: white;
   font-weight: bold;
-  text-indent: 200px; }
+  text-indent: 200px; 
+  }
 body .unpaid {
   text-align: center;
   font-size: 1.4em;
