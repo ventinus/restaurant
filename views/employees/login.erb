@@ -1,7 +1,17 @@
 <h1>Only few may enter</h1>
-<form action="/employees" method='POST'>
-  Name: <input type="text" name='employee[name]' ><br>
-  <input type="submit">
+
+<% @employee.errors.full_messages.each do |message| %>
+	<p class="error"><%= message %></p>
+<% end %>
+
+<form action="/login" method='POST'>
+  <label for="username">Name:</label> 
+  <input id="username" type="text" name='employee[username]' value="<%= @employee.username %>"><br>
+
+  <label for="emp_password">Password</label>
+  <input id="emp_password" type="password" name="employee[password]">
+
+  <input type="submit" value="get ta work!">
 </form>
 
-<a href="/employees/new">Create a nuevo account</a>
+<a href="/signup">Create a nuevo account</a>

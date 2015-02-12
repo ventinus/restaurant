@@ -1,4 +1,3 @@
-
 create table foods (
 id serial primary key,
 name text,
@@ -33,7 +32,8 @@ updated_at timestamp);
 
 create table employees (
 id serial primary key,
-username text,
+username text not null,
+password_digest text not null,
+authorization_token text,
 created_at timestamp,
 updated_at timestamp);
-CREATE TABLE

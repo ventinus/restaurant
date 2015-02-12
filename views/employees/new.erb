@@ -1,7 +1,19 @@
-<h1> Welcome to the team! </h1>
+<h1> One step away from joining the team! </h1>
 <h2>Enter your desired username: </h2>
 
-<form action="/employees" method="POST">
-  <input id="name" type="text" name="employee[name]">
+<% @employee.errors.full_messages.each do |message| %>
+	<p class="error"><%= message %></p>
+<% end %>
+
+<form action="/signup" method="POST">
+  <label for="username">Username</label>
+  <input id="username" type="text" name="employee[username]" value="<%= @employee.username %>">
+
+  <label for="emp_passowrd">Password</label>
+  <input id="emp_password" type="password" name="employee[password]">
+
+  <label for="conf_password">Confirm Password</label>
+  <input id="conf_password" type="password" name="employee[password_confirmation]">
+  
   <input type="submit" value="Enlist">
 </form>
